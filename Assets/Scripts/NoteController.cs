@@ -30,6 +30,7 @@ public class NoteController : MonoBehaviour {
         x = obj.transform.position.x;
         z = obj.transform.position.z;
         obj.transform.position = new Vector3(x, startY, z);
+        obj.GetComponent<NoteBehavior>().Initialize();
         obj.SetActive(true);
     }
 
